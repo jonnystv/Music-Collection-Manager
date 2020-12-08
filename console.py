@@ -14,3 +14,15 @@ artist_repository.save(artist_3)
 
 artist_4 = Artist("Ringo", "Starr")
 artist_repository.save(artist_4)
+
+album_1 = Album("Imagine", "Rock", "John Lennon")
+album_repository.save(album_1)
+
+album_2 = Album("Band on the Run", "Rock", "Paul McCartney")
+album_repository.save(album_2)
+
+album_3 = Album("Wonderwall Music", "Experimental", "George Harrison")
+album_repository.save(album_3)
+
+album_4 = Album("Sentimental Journey", "Jazz", "Ringo Starr")
+album_repository.save(album_4)

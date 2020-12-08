@@ -9,7 +9,7 @@ CREATE TABLE artists (
 
 CREATE TABLE albums (
     id SERIAL PRIMARY KEY,
-    title VARCHAR(255),
-    genre VARCHAR(255),
-    artist VARCHAR(255)
+    album_title VARCHAR(255),
+    album_genre VARCHAR(255),
+    album_artist VARCHAR(255)
 );
