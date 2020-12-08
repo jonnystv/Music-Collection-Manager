@@ -26,3 +26,7 @@ album_repository.save(album_3)
 
 album_4 = Album("Sentimental Journey", "Jazz", "Ringo Starr")
 album_repository.save(album_4)
+
+artist_repository.delete_all()
+
+album_repository.delete_all()
