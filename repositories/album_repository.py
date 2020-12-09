@@ -10,8 +10,31 @@ def save(album):
     id = results[0]['id']
     album.id = id
     return album
-    
+
 
 def delete_all():
     sql = "DELETE FROM albums"
     run_sql(sql)
+
+
+def select_all():
+    albums=[]
+
+    sql = "SELECT * FROM albums"
+    results = run_sql(sql)
+
+    for row in results:
+        album = Album(row['album_title'], row['album_genre'], row['album_artist'], row['id'])
+        albums.append(album)
+    return albums
+
+
+# def select(id):
+#     album = None
+#     sql = "SELECT * FROM albums WHERE id = %s"
+#     values = [id]
+#     result = run_sql(sql, values)[0]
+
+#     if result is not None:
+#         album = Album(result['album_title'], result['album_genre'], result['album_artist'], result['id'])
+#     return album

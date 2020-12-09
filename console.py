@@ -1,3 +1,4 @@
+import pdb
 from models.artist import Artist
 from models.album import Album
 import repositories.artist_repository as artist_repository
@@ -27,6 +28,18 @@ album_repository.save(album_3)
 album_4 = Album("Sentimental Journey", "Jazz", "Ringo Starr")
 album_repository.save(album_4)
 
-artist_repository.delete_all()
+# pdb.set_trace()
+artist_repository.select_all()
 
-album_repository.delete_all()
+# pdb.set_trace()
+album_repository.select_all()
+
+# album_repository.select(id)
+# pdb.set_trace()
+
+# artist_repository.select(id)
+# pdb.set_trace()
+
+# artist_repository.delete_all()
+
+# album_repository.delete_all()
